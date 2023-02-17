@@ -1,8 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+ *main - print a random number
+ *
+ *Return: 0
+ */
+
 int main(void)
 {
 	int n;
@@ -10,18 +15,11 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	if (n > 0) {
-		printf("%d is positive.\n", n)
-	}
-
-	if (n = 0) {
-		printf("%d is zero.\n", n)
-	}
-
-	if (n < 0) {
-		printf("%d is positive.\n", n)		
-	}
-
-	/* your code goes there */
-	return (0); 
+	if (n > 0)
+		printf("%d is positive.\n", n);
+	else if n = 0
+		printf("%d is zero.\n", n);
+	else if n < 0
+		printf("%d is positive.\n", n);
+	return (0);
 }
