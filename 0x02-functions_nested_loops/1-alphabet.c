@@ -1,9 +1,15 @@
-#include<stdio>
+#include "main.h"
 
 /**
- * main- print alphabet in lower case
- *
- * Return (0)
+* print_alphabet in lower case
 */
-int main(void)
 
+void print_alphabet(void)
+{
+	char letter;
+	for (letter = 'a'; letter <= 'z'; letter++)
+
+		_putchar(letter);
+
+	_putchar('\n');
+}
