@@ -1,4 +1,5 @@
-#include"main.h"
+#include "main.h"
+
 /**
 *main -program that prints _putchar
 *
@@ -6,6 +7,7 @@
 */
 
 int main(void)
+
 {
 _putchar('_');
 _putchar('p');
