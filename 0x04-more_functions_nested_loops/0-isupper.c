@@ -3,13 +3,12 @@
 #include <ctype.h>
 
 /**
- * isupper - check the code.
- *@c - the alphabet beicg checked
+ * _isupper - check the code.
+ *@c: - the alphabet to check
  * Return: Return 1 if alphabet is Uppercase, 0if alphabet is Lowercase.
  */
-int main(void)
+int _isupper(int c)
 {
-	char c;
 
 	if (c >= 'A' && c <= 'Z')
 	{
