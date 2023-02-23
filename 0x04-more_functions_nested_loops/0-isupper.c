@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * _isupper - check the code.
+ * isupper - check the code.
  *@c - the alphabet beicg checked
  * Return: Return 1 if alphabet is Uppercase, 0if alphabet is Lowercase.
  */
-int _isupper(void)
+int isupper(void)
 {
 	char c;
 
