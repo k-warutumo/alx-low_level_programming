@@ -21,3 +21,4 @@ void reset_to_98(int *n);
 	printf("After: x = %d\n", x);
 	return (0);
 	}
+}
