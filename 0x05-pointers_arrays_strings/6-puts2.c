@@ -5,17 +5,15 @@
  */
 void puts2(char *str)
 {
-	if (str == NULL)
+	int i = 0;
+
+	while (str[i] != '\0')
 	{
-	return;
-	}
-
-	int len = strlen(str);
-
-	for (int i = 0; i < len; i += 2)
+	if (i % 2 == 0)
 	{
 	putchar(str[i]);
 	}
+	i++;
 
 	putchar('\n');
 }
