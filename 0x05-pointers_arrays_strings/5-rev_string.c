@@ -4,7 +4,7 @@
  * rev_string- reverses a string
  * @s: - string
  */
-void rev_string(char *s);
+void rev_string(char *s)
 {
 	int i
 		int len, i, half;
