@@ -6,7 +6,7 @@
  *@b: - character
  *@s: -	string
  *@n: - number of bytes
- *return: s
+ *Return: s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
