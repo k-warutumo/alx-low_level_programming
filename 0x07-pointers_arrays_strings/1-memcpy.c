@@ -6,7 +6,8 @@
  * @n: given number of bytes
  * @b: character
  * @i: number of characters
- * return: returns pointer to dest
+ * @dest: destination
+ * Return: returns pointer to dest
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -16,5 +17,5 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		*(s + i) = b;
 	}
-	return (dest)
+	return (0);
 }
