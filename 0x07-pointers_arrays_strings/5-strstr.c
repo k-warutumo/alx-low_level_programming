@@ -7,7 +7,7 @@
  *Return: If the substring is located - a pointer to the beginning
  *                                       of the located substring
  */
-char *_strstr(char *haystack, char *needle);
+char *_strstr(char *haystack, char *needle)
 {
 	int index;
 
