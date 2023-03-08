@@ -6,7 +6,7 @@
  *
  *Return: the factorial
  */
-int factorial(int n);
+int factorial(int n)
 {
 	if (n < 0)/*check for -ve input to retun error*/
 	{
