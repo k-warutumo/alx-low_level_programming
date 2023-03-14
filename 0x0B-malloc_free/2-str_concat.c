@@ -12,25 +12,39 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+	char *conct;
+	int i, ci;
+
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
+
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
-	size_t s1_len = strlen(s1);
-	size_t s2_len = strlen(s2);
-	char *result = malloc(s1_len + s2_len + 1); /*  +1 for null terminator*/
+		i = ci = 0;
 
-	if (result == NULL)
+	while (s1[i] != '\0')
+		i++;
+
+	while (s2[ci] != '\0')
+		ci++;
+
+	conct = malloc(sizeof(char) * (i + ci + 1));
+
+	if (conct == NULL)
+		return (NULL);
+
+	i = ci = 0;
+
+	while (s1[i] != '\0')
 	{
-	return (NULL); /* malloc failed */
+		conct[i] = s1[i];
+		i++;
 	}
-
-	memcpy(result, s1, s1_len);
-	memcpy(result + s1_len, s2, s2_len + 1); /* +1 to copy null terminator */
-
-	return (result);
+	while (s2[ci] != '\0')
+	{
+		conct[i] = s2[ci];
+		i++, ci++;
+	}
+	conct[i] = '\0';
+	return (conct);
 }
