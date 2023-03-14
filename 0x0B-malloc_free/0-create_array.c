@@ -3,10 +3,10 @@
 #include<stdlib.h>
 
 /**
- * create_array: -array of chars
+ *create_array - array of chars
  *@size: size of the variable
  *@c: character to initialise the array
- *Returns: NULL if it fails
+ *Return: NULL if it fails
  */
 char *create_array(unsigned int size, char c)
 {
