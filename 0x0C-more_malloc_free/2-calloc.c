@@ -13,6 +13,8 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ptr;
+	unsigned int i;
+	char *f;
 
 /* Check for invalid input*/
 	if (nmemb == 0 || size == 0)
@@ -25,11 +27,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	/* Check for malloc failure*/
 	if (ptr == NULL)
-	{
-	return (NULL);
-	}
+		return (NULL);
+	
+	f = ptr;
 
-	/* Set memory to zero */
-	memset(ptr, 0, nmemb * size);
+	for (i = 0; i < (size * nmemb); i++)
+		f[i] = '\0';
+	
 	return (ptr);
 }
