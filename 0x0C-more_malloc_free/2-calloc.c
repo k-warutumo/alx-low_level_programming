@@ -5,13 +5,15 @@
 
 /**
  * _calloc - Allocates memory for an array
- *@nmemb: array elements
+ *@nmemb: number of  array elements
  *@size: size of array elements
  *Return: NULL if malloc fails or size/nmemb =0
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	void *ptr;
+
 /* Check for invalid input*/
 	if (nmemb == 0 || size == 0)
 	{
