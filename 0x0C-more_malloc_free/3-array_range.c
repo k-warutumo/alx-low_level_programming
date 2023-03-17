@@ -23,7 +23,7 @@ int *array_range(int min, int max)
 	if (arr == NULL)/*check for malloc failure*/
 		return (NULL);
 
-	for (i = 0, i <= max - min; i++;) /*initialize array elements*/
+	for (i = 0, i <= max; i++) /*initialize array elements*/
 	{
 		arr[i] = min + i;
 	}
