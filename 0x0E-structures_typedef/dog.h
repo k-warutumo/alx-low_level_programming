@@ -6,7 +6,7 @@
  * @name: name
  * @age: age
  * @owner: owner
- * Dexcription: this struct is for dog
+ * Description: this struct is for dog
  */
 
 struct dog
