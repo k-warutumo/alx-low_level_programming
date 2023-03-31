@@ -14,7 +14,7 @@ list_t *add_node(list_t **head, const char *str)
 	/*check if malloc failed*/
 	if (new_node == NULL)
 	{
-		return ("NULL");
+		return (NULL);
 	}
 
 	/*copy input string to new node*/
