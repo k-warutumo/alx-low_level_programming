@@ -9,12 +9,12 @@
  */
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *prev = NULL, *next = NULL;/*ptrs to prv &nxt nodes*/
+	listint_t *prev = NULL;/*ptrs to prv &nxt nodes*/
 	listint_t *current = *head;/*ptr to current code*/
 
 	while (current != NULL)
 		{
-		next = current->next;/*set nxt to next node*/
+		listint_t *next = current->next;/*set nxt to next node*/
 		current->next = prev;/*set next ptr of curr node to prev node*/
 		prev = current; /*set prev to current node*/
 		current = next; /*set current to next node*/
