@@ -11,10 +11,10 @@
 
 int main(int argc, char *argv[])
 {
-	int num_argument = argc - 1;
+	int number = argc - 1;
 
 	/*prints no. of arguments*/
-	printf("%d\n", num_argument);
+	printf("%d\n", number);
 
 	return (0);
 }
