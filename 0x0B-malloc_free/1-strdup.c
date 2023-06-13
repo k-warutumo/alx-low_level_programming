@@ -11,26 +11,20 @@
  */
 char *_strdup(char *str)
 {
-	int len;
-
-	char *_strdup(char *str)
-	{
 	size_t len = strlen(str) + 1;
-	}
 
 	if (str == NULL)
 	{
-		return (NULL);
+	return (NULL);
 	}
 
 	char *new_str = malloc(len);
 
 	if (new_str == NULL)
 	{
-		return (NULL);
+	return (NULL);
 	}
 
 	strcpy(new_str, str);
-
 	return (new_str);
 }
