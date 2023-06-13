@@ -3,11 +3,11 @@
 #include<stdio.h>
 
 /**
- *create_array - function that creates an array of characters
+ * create_array - function that creates an arry of characters
  *@size: size of int
  *@c: character
  *@array: array of chars
- *
+ *Return: Null if size =0, else pointer to array
  */
 
 char *create_array(unsigned int size, char c)
