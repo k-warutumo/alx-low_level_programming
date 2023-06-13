@@ -12,6 +12,10 @@
 
 char *create_array(unsigned int size, char c)
 {
+	/*decalration of variable*/
+	char *array;
+
+
 	if (size == 0)
 	{
 	return (NULL);
@@ -19,7 +23,7 @@ char *create_array(unsigned int size, char c)
 
 	/* ALLOCATE MEMORY Memory for the array*/
 
-	char *array = malloc(size * sizeof(char));
+	array = malloc(size * sizeof(char));
 
 	/*initialize array with specified char*/
 	for (int i = 0; i < size; i++)
