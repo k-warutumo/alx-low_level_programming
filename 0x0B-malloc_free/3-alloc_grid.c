@@ -12,12 +12,19 @@
 int **alloc_grid(int width, int height)
 {
 	/*declare the variable grid*/
-	int **grid = calloc(height, sizeof(int *));
-
+	int **grid;
+	
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
+	
+	grid = calloc(height, sizeof(int *));
+	if (grid == NULL)
+  		{
+		return NULL;
+		}
+
 	for (int i = 0; i < height; i++)
 	{
 	grid[i] = malloc(width * sizeof(int));
