@@ -3,45 +3,40 @@
 #include<stdio.h>
 
 /**
- *alloc_grid - function that returns a pointer to a 2 dim array
- *@height: an int
- *@width: a int
- *Return: NULL if fails
+ *alloc_grid - returns pointer
+ *@width: array width
+ *@height: array height
+ *Return: NULL if either is 0
  */
 
 int **alloc_grid(int width, int height)
 {
-	/*declare the variable grid*/
 	int **grid;
 	
 	if (width <= 0 || height <= 0)
 	{
-		return (NULL);
+	return (NULL);
 	}
-	
-	grid = calloc(height, sizeof(int *));
-	if (grid == NULL)
-  		{
-		return NULL;
-		}
 
+	/* Declare the grid variable inside the for loop*/
 	for (int i = 0; i < height; i++)
 	{
-	grid[i] = malloc(width * sizeof(int));
-	if (grid[i] == NULL)
+	int **grid = calloc(width, sizeof(int *));
+
+	if (grid == NULL)
 	{
 	for (int j = 0; j < i; j++)
 	{
 	free(grid[j]);
 	}
-		free(grid);
-		return (NULL);
-
+	free(grid);
+	return (NULL);
 	}
+
 	for (int j = 0; j < width; j++)
-		{
+	{
 		grid[i][j] = 0;
-		}
+	}
 	}
 
 	return (grid);
