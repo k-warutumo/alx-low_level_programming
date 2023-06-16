@@ -11,17 +11,25 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	char *ptr;
+	unsigned int moja;
+
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
 
-	void *ptr = malloc(nmemb * size);
+	ptr = malloc(nmemb * size);
 
-	if (ptr != NULL)
+	if (ptr == 0)
 	{
-		memset(ptr, 0, nmemb * size);
+		return (NULL);
 	}
 
-	return (ptr);
+	for (moja = 0; moja < size * nmemb; moja++)
+	{
+		ptr[moja] = 0;
+	}
+
+	return ((void *)ptr);
 }
