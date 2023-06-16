@@ -10,25 +10,25 @@
  */
 int *array_range(int min, int max)
 {
+	int *arr, size, x;
+
 	if (min > max)
 	{
 		return (NULL);  /* Return NULL if min is greater than max*/
 	}
 
-	int size = max - min + 1;  /* Calculate the size of the array*/
+	size  = max - min + 1;  /* Calculate the size of the array*/
 
-	int *arr = malloc(size * sizeof(int));/*Allocate memory for the array*/
+	arr = malloc(size * sizeof(int));/*Allocate memory for the array*/
 
 	if (arr == NULL)
 	{
 	return (NULL);  /* Return NULL if malloc fails*/
 	}
 
-	int i;
-
-	for (i = 0; i < size; i++)
+	for (x = 0; x < size; x++)
 	{
-	arr[i] = min + i;  /* Assign values to the array in order*/
+	arr[x] = min + x;  /* Assign values to the array in order*/
 	}
 
 	return (arr);
