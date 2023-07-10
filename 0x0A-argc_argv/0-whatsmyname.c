@@ -2,15 +2,14 @@
 #include <stdio.h>
 
 /**
- *main - prints the prog name
- *@argc: counts number of arguments
- *@argv: array of pointers of argc
- *Return: 0
+ *main - function that prints its name
+ *@argc: number of coomandsd
+ *@argv: number
+ *Return: returns 0
  */
 
-int main(int argc, char argv[])
+int main(int argc, char *argv[])
 {
-	printf("%d\n", argv[argc * 0]);
-
+	printf("%s\n", argv[argc * 0]);
 	return (0);
 }
