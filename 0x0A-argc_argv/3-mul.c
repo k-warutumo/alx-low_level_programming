@@ -5,7 +5,7 @@
  *main - function that prints 2 numbers
  *@argc: number of commands
  *@argv: array containg commands
- *Return: 0
+ *Return: 0 if successs, 1 if fails
  */
 int main(int argc, char *argv[])
 {
@@ -16,11 +16,7 @@ int main(int argc, char *argv[])
 	return (1);
 	}
 
-	int first_number = atoi(argv[1]);
-	int second_number = atoi(argv[2]);
-
-	int product = first_number * second_number;
-
+	int product = (atoi(argv[1]) * atoi(argv[2]));
 	/* Print the result of the multiplication.*/
 	printf("%d\n", product);
 
