@@ -1,8 +1,8 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- *main: function that prints 2 numbers
+ *main - function that prints 2 numbers
  *@argc: number of commands
  *@argv: array containg commands
  *Return: 0
